@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentando</title>
+</head>
+<body>
+    <h1>De onde você veio ?</h1>
+    <input type="text" name="país" id="país">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+       function clicar(){
+        var país = document.getElementById('país')
+        var res = document.getElementById('res')
+        res.innerHTML='<p>Seja bem vindo</p>'
+        if(país.value == 'Brasil'){
+            res.innerHTML +='<p>Você não precisa de um visto</p>'
+        }
+        else{
+            res.innerHTML +='<p>Precisamos ver seu visto</p>'
+        }
+       }
+    </script>
+</body>
+</html>
