@@ -31,12 +31,13 @@ function adicionarTarefa() {
     let ini = 0
     for(ini; ini <  tarefas.length; i++){
     
-    //Essa linha está criando um novo elemento, e transformando ele numa variável
     let novaT = document.createElement("li")
 
     novaT.textContent = tarefa
 
-    //posiciona o elemento li no lugar certo, sem o posicionamento a tag não funciona
+    let botaoL = document.createElement("button")
+
+    novaT.appendChild(botaoL)
     listaT.appendChild(novaT)
     }
   }
