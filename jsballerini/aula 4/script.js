@@ -36,10 +36,16 @@ function adicionarTarefa() {
     novaT.textContent = tarefa
 
     let botaoL = document.createElement("button")
+    botaoL.className = "remover"
+    botaoL.textContent = "Remover"
+    botaoL.onclick = () => removerTarefa()
 
     novaT.appendChild(botaoL)
     listaT.appendChild(novaT)
     }
   }
+  }
+  function removerTarefa() {
+    tarefas.slpice()
   }
   
